@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cart</title>
+  <link rel="shortcut icon" href="/images/favicon.ico">
+  <link rel="stylesheet" href="./libs/bootstrap/css/bootstrap.css">
+  <link rel="stylesheet" href="./fonts/fontawesome-pro-5.14.0-web/css/all.min.css">
+  <link rel="stylesheet" type="text/css" href="./libs/owlcarousel/assets/owl.carousel.min.css">
+  <link rel="stylesheet" type="text/css" href="./libs/owlcarousel/assets/owl.theme.default.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  <link rel="stylesheet" href="./css/cart.css">
+</head>
+
+<body>
+  <header class="" id="header-top">
+    <div class="header__banner">
+      <div id="js-header-banner" class="owl-carousel owl-theme">
+        <div class="item">
+          <a href="">
+            <img class="" src="./images/header_banner.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img class="" src="./images/header_banner.jpg" alt="">
+          </a>
+        </div>
+        <div class="item">
+          <a href="">
+            <img class="" src="./images/header_banner.jpg" alt="">
+          </a>
+        </div>
+      </div>
+      <!-- end #header__banner -->
+
+      <!-- <div id="js-close-header-banner" class="btn-close-banner">
+        <i class="fal fa-times"></i>
+      </div> -->
+      <!-- end .btn-close-banner -->
+
+    </div>
+    <!-- end .banner -->
+
+    <div class="header__contact" >
+      <div class="container-fluid pb-md-2" style="background-color: rgb(2, 2, 168);"  >
+        <div class="d-flex justify-content-center pt-2 ">
+          <a href="" class="header__contact--link">
+            <i class="fal fa-building"></i>
+            <span class="contact__text">Hệ thống showroom</span>
+            <span class="contact__text "></span>
+          </a>
+          <a href="" class="header__contact--link">
+            <i class="fal fa-user-headset"></i>
+            <span class="contact__text">Tư vấn mua hàng:</span>
+            <span class="contact__text text-primary"> 1800 6867</span>
+          </a>
+          <a href="" class="header__contact--link">
+            <i class="fal fa-user-headset"></i>
+            <span class="contact__text">CSKH:</span>
+            <span class="contact__text text-primary"> 1800 6865</span>
+          </a>
+          <a href="" class="header__contact--link">
+            <i class="fal fa-newspaper"></i>
+            <span class="contact__text">Tin công nghệ</span>
+            <span class="contact__text"></span>
+          </a>
+          <a href="" class="header__contact--link">
+            <i class="fal fa-cogs"></i>
+            <span class="contact__text">Xây dựng cấu hình</span>
+            <span class="contact__text"></span>
+          </a>
+        </div>
+      </div>
+      <!-- end .container -->
+    </div>
+    <!-- end .header__contact -->
+  </header>
+  <!-- end header -->
+
+  <!-- logo -search-->
+    <div class="container mt-4">
+       <div class="row">
+           <div class="col-md-1 pl-md-0">
+            <div class="header__logo" id="js-header-logo">
+              <a href="index.html" class="header__logo--link"><img class="logo__img" src="./images/logo.svg" alt=""></a>
+            </div>
+           </div>
+
+           <div class="col-md-2 p-0">
+             <div class="one">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-list-stars" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M5 11.5a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h9a.5.5 0 0 1 0 1h-9a.5.5 0 0 1-.5-.5z"/>
+                <path d="M2.242 2.194a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.256-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53zm0 4a.27.27 0 0 1 .516 0l.162.53c.035.115.14.194.258.194h.551c.259 0 .37.333.164.493l-.468.363a.277.277 0 0 0-.094.3l.173.569c.078.255-.213.462-.423.3l-.417-.324a.267.267 0 0 0-.328 0l-.417.323c-.21.163-.5-.043-.423-.299l.173-.57a.277.277 0 0 0-.094-.299l-.468-.363c-.206-.16-.095-.493.164-.493h.55a.271.271 0 0 0 .259-.194l.162-.53z"/>
+              </svg>
+              <span>Danh mục sản phẩm</span>
+             </div>
+           </div>
+
+           <div class="col-md-5">
+             <form action="" class="header__search--form">
+              <input type="search" name="keyword" id="" class="search__input" placeholder="Nhập từ khóa cần tìm...">
+              <button class="btn search__button">
+                <i class="fal fa-search">
+                  
+                </i>
+              </button>
+             </form>
+           </div>
+
+           <div class="col-md-4 pr-md-0">
+            <div class="d-flex flex-row-reverse bd-highlight">
+              <div class="p-2 bd-highlight"><a class="header__funtion--link d-flex flex-column align-content-center align-items-center" href="" title="Giỏ hàng">
+                <i class="fal fa-shopping-cart"></i>
+              
+              </a></div>
+              <div class="p-2 bd-highlight"><a class="header__funtion--link d-flex flex-column align-content-center align-items-center" href="" title="Tài khoản">
+                <i class="fal fa-user-circle"></i>
+                
+              </a></div>
+              <div class="p-2 bd-highlight"><a class="header__funtion--link d-flex flex-column align-content-center align-items-center" href="" title="Thông báo">
+                <i class="fal fa-bell-on"></i>
+               
+              </a></div>
+              <div class="p-2 bd-highlight"><a class="header__funtion--link d-flex flex-column align-content-center align-items-center" href="" title="Đơn hàng">
+                <i class="fal fa-clipboard-check"></i>
+                
+              </a></div>
+              <div class="p-2 bd-highlight"><a class="header__funtion--link d-flex flex-column align-content-center align-items-center active" href="" title="Khuyến mãi">
+                <i class="fal fa-tags"></i>
+               
+              </a></div>
+            </div>
+           </div>
+
+
+       </div>
+    </div>
+  <!-- end logo -search../-->
+
+<div class="contact">
+  <div class="container p-0">
+    <div class="row">
+      <div class="col-md-12 pl-md-0">
+         <div class="nav_ic">
+           <ul>
+             <li> <a href="#" class="icon__home"><i class="fas fa-home-lg"></i></a> </li>
+             <li> <a href=""><i class="fal fa-angle-right"></i></a> </li>
+             <li> <a href=""> <span>Giỏ hàng</span> </a></li>
+           </ul>
+         </div>
+      </div>
+    </div>
+
+
+    <div class="row mt-3 ">
+      <div class="col-md-7 p-1">
+        <div class="d-flex bd-highlight">
+          <div class="p-2 flex-grow-1 bd-highlight"> <h4>Giỏ hàng của bạn</h4> </div>
+          <div class=" oio p-2 bd-highlight"><a href=""> <span>Xóa tất cả</span> </a></div>
+        </div>
+      </div>
+      <div class="col-md-3">
+        
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-8 ">
+        <div class="cart">
+
+           <div class="flex-container">
+            <div >
+              <form action="">
+              <label for="c1"></label>
+              <input type="checkbox" id="c1"  /> 
+            </form>
+          </div>
+            <div>
+              <div class="iu">
+                <img src="./images/so.png" alt="">
+              </div>
+            </div>
+            <div  class="au">
+              <span style="font-weight:600 ;">Phong Vũ</span> 
+              <img src="./images/xanh.png" alt="">
+            </div>  
+          </div> 
+          
+          <hr style="margin-top: 0px;">
+<!-- ================Bảng Giỏ Hàng===================== -->
+
+<table class="tablee table table-borderless">
+  
+  <tbody>
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop5.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx  </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop4.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5 AN515-52-51LW </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop1.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5 AN515-52-51LW </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop1.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5 AN515-52-51LW </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop1.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5 AN515-52-51LW </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+
+
+    <tr>
+      <td scope="row"><input type="checkbox" id="c1"  /> </td>
+      <td><img class="one" src="./images/product/laptop1.webp" alt=""></td>
+      <td><span class="w">Laptop Acer Nitro 5 AN515-52-51LW </span></td>
+      <td>
+        <div class="sl">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M3.25 12C3.25 11.5858 3.58579 11.25 4 11.25H20C20.4142 11.25 20.75 11.5858 20.75 12C20.75 12.4142 20.4142 12.75 20 12.75H4C3.58579 12.75 3.25 12.4142 3.25 12Z" fill="#82869E"></path></svg></button>
+           <input type="number" class="hy" value="1">
+          <button class="det"><svg fill="none" viewBox="0 0 24 24" size="16" class="css-1mzhsqx" color="textPrimary" height="16" width="16" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" clip-rule="evenodd" d="M12.75 4C12.75 3.58579 12.4142 3.25 12 3.25C11.5858 3.25 11.25 3.58579 11.25 4V11.25H4C3.58579 11.25 3.25 11.5858 3.25 12C3.25 12.4142 3.58579 12.75 4 12.75H11.25V20C11.25 20.4142 11.5858 20.75 12 20.75C12.4142 20.75 12.75 20.4142 12.75 20V12.75H20C20.4142 12.75 20.75 12.4142 20.75 12C20.75 11.5858 20.4142 11.25 20 11.25H12.75V4Z" fill="#82869E"></path></svg></button>
+        </div>
+          
+      </td>
+      <td>24.040.000₫</td>
+    </tr>
+   
+   
+  </tbody>
+</table>
+
+<!-- ================ Kết Thức Bảng Giỏ Hàng===================== -->
+
+          
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="sale">
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class=" chinh p-2 bd-highlight"><h5>Mã giảm giá</h5></div>
+            <div class="p-2 bd-highlight">
+              <div class="ma_sale">
+                <form action="">
+
+                  <input type="text" placeholder="Nhập mã của bạn">
+                  <button class="btn btn-primary" >Áp dụng ngay</button>
+                </form>
+              </div>
+              <div class="css-1ncmufo"><div width="100%" color="#E4E5F0" class="css-1fm9yfq"></div></div>
+            </div>
+          </div>
+          
+        </div>
+        <div class="pay">
+          <table class="table table-borderless">
+            <thead>
+              <tr>
+                <th scope="col"><h5>Thanh toán</h5></th>
+              </tr>
+            </thead>
+            <tbody>
+
+              <tr>
+                <td>Tạm tính</td>
+                <td class="ping">534.000 đ</td>
+                
+              </tr>
+              <tr>
+                <td>Thành tiền</td>
+                <td class="pingg">534.000 đ <p>(Đã bao gồm VAT)</p></td>
+             
+              </tr>
+              <tr>
+                <td colspan="2"><button type="button">TIẾP TỤC THANH TOÁN</button></td>
+              </tr>
+              
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+  
+
+<footer class="footer">
+  <div class="footer__top bg-white">
+    <div class="container">
+      <div class="row pt-4">
+        <div class="col-md-3 mb-3">
+          <h5>Hỗ trợ khách hàng</h5>
+          <a href="" class="footer__link">Thẻ ưu đãi</a>
+          <a href="" class="footer__link">Trung tâm bảo hành</a>
+          <a href="" class="footer__link">Thanh toán va giao hàng</a>
+          <a href="" class="footer__link">Dịch vụ sữa chữa và bảo trì</a>
+          <a href="" class="footer__link">Doanh nghiệp thanh thiết</a>
+
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Chính sách Mua hàng và Bảo hành</h5>
+          <a href="" class="footer__link">Quy định chung</a>
+          <a href="" class="footer__link">Chính sách bảo mật thông tin</a>
+          <a href="" class="footer__link">Chính sách vận chuyển và lắt đặt</a>
+          <a href="" class="footer__link">Chính sách bảo hành</a>
+          <a href="" class="footer__link">Chính sách đổi trả và hoàn tiền</a>
+          <a href="" class="footer__link">Chính sách trả góp</a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Thông tin Phong Vũ</h5>
+          <a href="" class="footer__link">Giới thiệu Phong Vũ</a>
+          <a href="" class="footer__link">Thông tin liên hệ</a>
+          <a href="" class="footer__link">Hệ thống Showroom</a>
+          <a href="" class="footer__link">Hỏi đáp</a>
+          <a href="" class="footer__link">Tin công nghệ</a>
+          <a href="" class="footer__link">Tuyển dụng</a>
+        </div>
+        <div class="col-md-3 mb-3">
+          <h5>Liên hệ</h5>
+          <a href="" class="footer__link"><i class="fab fa-facebook-square text-primary"></i>Phong Vũ Việt Nam</a>
+          <a href="" class="footer__link"><i class="fab fa-youtube text-danger"></i>Phong Vũ Media</a>
+          <a href="" class="footer__link"><i class="fas fa-users-class text-info"></i>Phong Vũ Hội</a>
+          <a href="" class="footer__link">Hỗ trợ khách hàng: <span>cskh@phongvu.vn</span></a>
+          <a href="" class="footer__link">Liên hệ báo giá <span>baogia@phongvu.vn</span></a>
+          <a href="" class="footer__link">Liên hệ hợp tác <span>hoptac@phongvu.vn</span></a>
+        </div>
+        <div class="col-md-4 mb-3">
+          <h5>Phương thức thanh toán</h5>
+          <a href="" class="footer__link d-inline-block footer__link--pay"><i class="fal fa-qrcode"></i>QR-Code</a>
+          <a href="" class="footer__link d-inline-block footer__link--pay"><i class="fas fa-money-bill-alt"></i>Tiền mặt</a>
+          <a href="" class="footer__link d-inline-block footer__link--pay"><i class="fad fa-clock"></i>Trả góp</a>
+          <a href="" class="footer__link d-inline-block footer__link--pay"><i class="far fa-money-check"></i>Internet Banking</a>
+
+        </div>
+        <div class="col-md-8 mb-3">
+          <h5>Danh sách ngân hàng thanh toán online</h5>
+          <a href="" class="footer__link d-inline-block footer__link--pay disabled"><img src="./images/bank/banklist.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer__bottom">
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-md-4 pt-3">
+          <h5>CÔNG TY CỔ PHẦN THƯƠNG MẠI - DỊCH VỤ PHONG VŨ</h5>
+          <p>
+            © 1997 - 2020 Công Ty Cổ Phần Thương Mại - Dịch Vụ Phong Vũ
+            <br>
+            Giấy chứng nhận đăng ký doanh nghiệp: 0304998358 do Sở KH-ĐT TP.HCM cấp lần đầu ngày 30 tháng 05 năm 2007
+          </p>
+        </div>
+        <div class="col-md-6 pt-3">
+          <b>Địa chỉ trụ sở chính:</b>
+          <br/>
+          Tầng 5, Số 117-119-121 Nguyễn Du, Phường Bến Thành, Quận 1, Thành Phố Hồ Chí Minh
+          <br/>          
+          <b>Văn phòng điều hành miền Bắc:</b>
+          <br/>
+          Tầng 6, Số 1 Phố Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội
+          <br/>
+          <b>Văn phòng điều hành miền Nam:</b>
+          <br/>
+          Tầng 11 Minh Long Tower, số 17 Bà Huyện Thanh Quan, Phường 6, Quận 3, TP. Hồ Chí Minh
+        </div>
+        <div class="col-md-2 pt-3 text-left">
+          <a href="" class="footer__link footer__link--pay "><img src="./images/bank/da-dang-ky.png" alt=""></a>
+          <a href="" class="footer__link footer__link--pay disabled"><img src="./images/bank/dmca-badge-w100-2x1-02.png" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+<!-- end .footer -->
+
+
+<!-- <div class="boxed__contact d-flex flex-column">
+  <a href="#" class="icon__contact icon__contact--phone">
+    <span class="title--icon">Hotline</span>
+    <img src="./images/bank/phone.png" width="50" height="50" alt="">
+  </a>
+  <a href="#" class="icon__contact icon__email">
+    <span class="title--icon">Email hỗ trợ</span>
+    <img src="./images/bank/email.png" width="50" height="50" alt="">
+  </a>
+  <a href="#" class="icon__contact icon__contact--address">
+    <span class="title--icon">Showroom</span>
+    <img src="./images/bank/address.png" width="50" height="50" alt="">
+  </a>
+  <a href="#" class="icon__contact icon__contact--facebook">
+    <span class="title--icon">Like fanpage & trúng quà mini mỗi ngày!</span>      
+    <img src="./images/bank/facebook.png" width="50" height="50" alt="">
+  </a>
+  <a href="#header-top" class="mb-0 mt-auto icon__contact icon__move--top"> 
+    <i class="fal fa-chevron-up"></i>
+  </a>
+  <a href="#" class="mb-0 icon__contact icon__contact--message">
+    <img src="./images/bank/message.png" width="60" height="60" alt="">
+  </a>
+</div> -->
+<!-- end icon right -->
+<!-- <div class="icon__promotion">
+  <a href="#" class="mb-0 icon__contact icon__contact--message">
+    <span class="title--icon">KHUYẾN MÃI HÔM NAY</span>
+    <img class="image--promotion" src="./images/bank/ring-01.png" width="60" height="60" alt="">
+    <i></i>
+  </a>
+</div> -->
+ 
+
+  
+  <script type="text/javascript" src="./js/jquery-3.5.0.min.js "></script>
+  <script type="text/javascript" src="./libs/owlcarousel/owl.carousel.min.js "></script>
+  <script type="text/javascript" src="./libs/bootstrap/js/bootstrap.bundle.js"></script>
+  <script src="./js/countdown.js "></script>
+  <script src="./js/index.js "></script>
+
+
+</body>
+
+</html>
